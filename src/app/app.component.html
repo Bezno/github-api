@@ -1,0 +1,35 @@
+<div class="page row">
+  <!-- Sección del perfil -->
+  <div class="col-12 row" id="profile ">
+    <div class="col-lg-6">
+      <div id="avatar" #avatar></div>
+      <div id="name"></div>
+      <div id="bio"></div>
+    </div>
+    <!-- Sección de información extra -->
+    <div class="col-lg-6">
+      <div class="info">
+        <div id="info">
+        </div>
+        <!-- Botón para la tabla de repositorios -->
+        <button type="button" id="repos_btn" class="repos_btn btn btn-outline-secondary" (click)="show()">Show
+          Repositories</button>
+      </div>
+    </div>
+  </div>
+  <div id="repos">
+    <table class="table table-bordered table-striped">
+      <caption>Repositories</caption>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Repository</th>
+          <th>Language</th>
+        </tr>
+      </thead>
+      <tbody id="repos_table">
+      </tbody>
+    </table>
+  </div>
+
+</div>
